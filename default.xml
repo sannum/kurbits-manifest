@@ -12,11 +12,12 @@
 -->
 <manifest>
   <remote fetch="https://github.com/nanopb" name="nanopb"/>
-  <remote fetch="." name="seL4"/>
-  <remote fetch="../sel4proj" name="sel4proj"/>
-  
+  <remote fetch="https://github.com/seL4" name="seL4"/>
+  <remote fetch="https://github.com/sel4proj" name="sel4proj"/>
+  <remote fetch="https://github.com/sannum" name="kurbits"/>
+
   <default remote="seL4" revision="master"/>
-  
+
   <project name="musllibc.git" path="projects/musllibc" revision="8a4bddbf499a1c9ff8a064d360dd715ef99ffcab" upstream="sel4"/>
   <project name="nanopb" path="tools/nanopb" remote="nanopb" revision="847ac296b50936a8b13d1434080cef8edeba621c" upstream="master"/>
   <project name="riscv-pk" path="tools/riscv-pk" remote="sel4proj" revision="d3293c7c23e923338318f3860b2f20dd0b51a016" upstream="fix-32bit"/>
@@ -28,7 +29,8 @@
   </project>
   <project name="sel4_projects_libs" path="projects/sel4_projects_libs" remote="sel4proj" revision="d69f819e8aac4ebc5669027d1fefbe01ddfc3d27" upstream="master"/>
   <project name="sel4runtime.git" path="projects/sel4runtime" remote="sel4proj" revision="8fddd5e8c1d76ee51b6c0d502e666ee431be32c6" upstream="master"/>
-  <project name="sel4test.git" path="projects/sel4test" revision="9b516c0a9f8fe17721ddfd74499932765a73301b" upstream="master">
+  <project name="sel4test.git" path="projects/sel4test" revision="9b516c0a9f8fe17721ddfd74499932765a73301b" upstream="master" />
+  <project name="kurbits.git" path="projects/kurbits" revision="9b516c0a9f8fe17721ddfd74499932765a73301b" remote="kurbits" upstream="master">
     <linkfile dest="easy-settings.cmake" src="easy-settings.cmake"/>
   </project>
   <project name="util_libs.git" path="projects/util_libs" revision="1c7f5ce37e4f7a83b5a2322cd1b83072a483e2d6" upstream="master"/>
